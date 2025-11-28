@@ -108,46 +108,46 @@ GET http://localhost:3000/tasks/
 ## 🚀 Execução e Testes
 
 ### Inicialização da Aplicação
-- [ ] Aplicação inicia sem erros (`npm run start:dev`)
-- [ ] Banco de dados SQLite criado automaticamente (tasks.db)
-- [ ] Console mostra "API rodando em http://localhost:3000"
-- [ ] Hot reload funcionando adequadamente
+- [X] Aplicação inicia sem erros (`npm run start:dev`)
+- [X] Banco de dados SQLite criado automaticamente (tasks.db)
+- [X] Console mostra "API rodando em http://localhost:3000"
+- [X] Hot reload funcionando adequadamente
 
 ### Teste dos Endpoints - GET
-- [ ] `GET /tasks` retorna array vazio inicialmente (200 OK)
-- [ ] `GET /tasks/1` retorna 404 Not Found quando não há tarefas
+- [X] `GET /tasks` retorna array vazio inicialmente (200 OK)
+- [X] `GET /tasks/1` retorna 404 Not Found quando não há tarefas
 
 ### Teste dos Endpoints - POST
-- [ ] `POST /tasks` com dados válidos cria tarefa (201 Created)
-- [ ] `POST /tasks` retorna tarefa criada com ID, timestamps
-- [ ] `POST /tasks` com título vazio retorna 400 Bad Request
-- [ ] `POST /tasks` com status inválido retorna 400 Bad Request
+- [X] `POST /tasks` com dados válidos cria tarefa (201 Created)
+- [X] `POST /tasks` retorna tarefa criada com ID, timestamps
+- [X] `POST /tasks` com título vazio retorna 400 Bad Request
+- [X] `POST /tasks` com status inválido retorna 400 Bad Request
 
 ### Teste dos Endpoints - GET com dados
-- [ ] `GET /tasks` retorna array com tarefa(s) criada(s)
-- [ ] `GET /tasks/1` retorna tarefa específica (200 OK)
-- [ ] `GET /tasks/999` retorna 404 Not Found
+- [X] `GET /tasks` retorna array com tarefa(s) criada(s)
+- [X] `GET /tasks/1` retorna tarefa específica (200 OK)
+- [X] `GET /tasks/999` retorna 404 Not Found
 
 ### Teste dos Endpoints - PUT
-- [ ] `PUT /tasks/1` com dados válidos atualiza tarefa (200 OK)
-- [ ] `PUT /tasks/1` retorna tarefa atualizada
-- [ ] `PUT /tasks/999` retorna 404 Not Found
-- [ ] Atualização parcial funciona (apenas alguns campos)
+- [X] `PUT /tasks/1` com dados válidos atualiza tarefa (200 OK)
+- [X] `PUT /tasks/1` retorna tarefa atualizada
+- [X] `PUT /tasks/999` retorna 404 Not Found
+- [X] Atualização parcial funciona (apenas alguns campos)
 
 ### Teste dos Endpoints - DELETE
-- [ ] `DELETE /tasks/1` remove tarefa (204 No Content)
-- [ ] `DELETE /tasks/999` retorna 404 Not Found
-- [ ] Tarefa removida não aparece mais em `GET /tasks`
+- [X] `DELETE /tasks/1` remove tarefa (204 No Content)
+- [X] `DELETE /tasks/999` retorna 404 Not Found
+- [X] Tarefa removida não aparece mais em `GET /tasks`
 
 ## 📋 Testes de Validação
 
 ### Validação de Entrada
-- [ ] Campos obrigatórios (title, description) são validados
-- [ ] Status aceita apenas valores válidos (aberto, fazendo, finalizado)
-- [ ] Campos extras são ignorados (whitelist ativa)
-- [ ] Mensagens de erro são claras e específicas
+- [X] Campos obrigatórios (title, description) são validados
+- [X] Status aceita apenas valores válidos (aberto, fazendo, finalizado)
+- [X] Campos extras são ignorados (whitelist ativa)
+- [X] Mensagens de erro são claras e específicas
 
 ### Validação de IDs
-- [ ] IDs não numéricos retornam 400 Bad Request
-- [ ] IDs decimais são tratados adequadamente
-- [ ] IDs negativos são tratados adequadamente
+- [X] IDs não numéricos retornam 400 Bad Request
+- [X] IDs decimais são tratados adequadamente
+- [X] IDs negativos são tratados adequadamente
